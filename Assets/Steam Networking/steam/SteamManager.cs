@@ -15,6 +15,8 @@ public class SteamManager : MonoBehaviour
     public static SteamManager instance;
     public bool _steamServer;
 
+    public uint appID = 480;
+
     public SteamId steamID;
 
     public static Dictionary<SteamId, int> players = new Dictionary<SteamId, int>();
@@ -43,7 +45,7 @@ public class SteamManager : MonoBehaviour
             {
                 try
                 {
-                    SteamClient.Init(480);
+                    SteamClient.Init(appID);
                     SteamNetworkingUtils.InitRelayNetworkAccess();
                     steamID = SteamClient.SteamId;
                 }
