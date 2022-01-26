@@ -7,6 +7,7 @@ This project also makes use of Steam Friends and Lobbies to be used with the rel
 Ontop of setting up a basic interface for using the SteamNetworkingSockets transport, this project impliments a very simple networked character controller, with a simple implimentation of client side prediction, which should mask network delay.
 
 How to use the demo:
+ - first install TextMeshPro
  - you must have steam open for the project to work
  - join someone elses lobby by right clicking their steam profile picture and clicking "join game"
  - WASD to move around. left Shift to sprint. each players steam name, steam id, inputs, and ping will be displayed on the UI.
